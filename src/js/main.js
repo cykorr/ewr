@@ -43,6 +43,13 @@
   runAnimationLoop();
 
   var theme = CONFIG.theme;
+  var background = CONFIG.background || {};
+  if (!CONFIG.background) CONFIG.background = background;
+  if (!background.effects) background.effects = {};
+  if (typeof background.src !== "string") background.src = "";
+  if (typeof background.color !== "string") {
+    background.color = theme.backgroundColor || "#000000";
+  }
 
   // Theme presets
   if (theme.preset) {
