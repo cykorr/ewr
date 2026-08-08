@@ -51,34 +51,6 @@ body, * { font-family: 'Array', 'Onest', sans-serif !important; }
 canvas{will-change:transform;transform:translateZ(0)}
 .aurora-container,.dither-container,.plasma-container{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;will-change:transform;transform:translateZ(0)}
 </style>
-<style>
-  body {
-    background-color: #000000 !important;
-  }
-  .bg-color {
-    background-color: transparent !important;
-  }
-  .bg-image {
-    background-image: url('src/assets/background/olivia.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-  }
-</style>
-<script>
-  // This watcher catches when main.js tries to write a broken background URL and fixes it instantly
-  const observer = new MutationObserver((mutations) => {
-    const bgDiv = document.querySelector('.bg-image');
-    if (bgDiv) {
-      const currentStyle = bgDiv.getAttribute('style');
-      if (currentStyle && !currentStyle.includes('olivia.png')) {
-        bgDiv.style.backgroundImage = "url('src/assets/background/olivia.png')";
-      }
-    }
-  });
-  observer.observe(document, { childList: true, subtree: true });
-</script>
 </head>
 <body>
 
