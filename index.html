@@ -66,6 +66,19 @@ canvas{will-change:transform;transform:translateZ(0)}
     background-attachment: fixed !important;
   }
 </style>
+<script>
+  // This watcher catches when main.js tries to write a broken background URL and fixes it instantly
+  const observer = new MutationObserver((mutations) => {
+    const bgDiv = document.querySelector('.bg-image');
+    if (bgDiv) {
+      const currentStyle = bgDiv.getAttribute('style');
+      if (currentStyle && !currentStyle.includes('olivia.png')) {
+        bgDiv.style.backgroundImage = "url('src/assets/background/olivia.png')";
+      }
+    }
+  });
+  observer.observe(document, { childList: true, subtree: true });
+</script>
 </head>
 <body>
 
