@@ -72,7 +72,7 @@ const CONFIG = {
   equalizer: { enabled: false, bars: 32, color: "#ffffff", glowColor: "rgba(255,255,255,0.3)", height: 80, position: "bottom" },
   avatarWave: { enabled: false, color: "#ffffff", lines: 3, amplitude: 10, speed: 0.02 },
   progressBar: { height: 3, radius: 15, color: "#ffffff", bgColor: "rgba(255,255,255,0.3)", thumbSize: 10, gradient: [] },
-  background: { src: "./src/assets/olivia.png", color: "#000000", effects: { aurora: true, dither: false, plasma: false, snow: false, rain: false, stars: true, fireflies: false } },
+  bbackground: { src: "", color: "#000000", effects: { aurora: false, dither: false, plasma: false, snow: false, rain: false, stars: false, fireflies: false } },
 };
 
 const BADGE_SVGS = {
