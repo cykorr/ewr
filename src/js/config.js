@@ -24,7 +24,7 @@ const CONFIG = {
     { url: "https://www.torn.com/profiles.php?XID=4253443", icon: "src/assets/icons/torn.png", color: "#ffffff" },
     { url: "https://fortnitetracker.com/profile/all/6bb6ff73ecf3497cb044bdcacff9a405", icon: "src/assets/icons/fortnite.png", color: "#dddddd" },
   ],
-  views: 972,
+  views: 1,
   audio: {
     src: "src/assets/avatar/music1.mp3",
     title: "擁抱愛 《愛‧回家》主題曲",
