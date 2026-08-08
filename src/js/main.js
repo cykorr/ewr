@@ -418,7 +418,7 @@
           data[i] = Math.floor(80 + v1 * 120 + v2 * 30);
           data[i + 1] = Math.floor(20 + v2 * 60 + v3 * 80);
           data[i + 2] = Math.floor(120 + v3 * 100 + v1 * 40);
-          data[i + 3] = Math.floor(180 + v2 * 75);
+          data[i + 3] = Math.floor(40 + v2 * 45);
         }
       }
       ctx.putImageData(imageData, 0, 0);
